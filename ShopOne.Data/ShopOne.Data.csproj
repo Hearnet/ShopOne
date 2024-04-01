@@ -51,27 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\DbFactory.cs" />
-    <Compile Include="Infrastructure\Disposable.cs" />
-    <Compile Include="Infrastructure\IDbFactory.cs" />
-    <Compile Include="Infrastructure\IRepository.cs" />
-    <Compile Include="Infrastructure\IUnitOfWork.cs" />
-    <Compile Include="Infrastructure\RepositoryBase.cs" />
-    <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\202403290910155_initialDB.cs" />
-    <Compile Include="Migrations\202403290910155_initialDB.designer.cs">
-      <DependentUpon>202403290910155_initialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ProductCategoryRepository.cs" />
-    <Compile Include="Repositories\ProductRepository.cs" />
-    <Compile Include="ShopOneDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,15 +63,6 @@
       <Project>{61722952-ccf7-47db-a401-2320a74a122f}</Project>
       <Name>ShopOne.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ShopOne.Model\ShopOne.Model.csproj">
-      <Project>{2d6bbef8-d2c9-4a81-86e5-aee103c7fe1d}</Project>
-      <Name>ShopOne.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202403290910155_initialDB.resx">
-      <DependentUpon>202403290910155_initialDB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

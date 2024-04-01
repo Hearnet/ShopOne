@@ -7,11 +7,10 @@ namespace ShopOne.Model.Models
     public class ProductTag
     {
         [Key]
-        [Column(Order = 1)]
         public int ProductID { set; get; }
 
         [Key]
-        [Column(TypeName = "varchar", Order = 2)]
+        [Column(TypeName = "varchar")]
         [MaxLength(50)]
         public string TagID { set; get; }
 
